@@ -19,13 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="zad02.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="testcase\zad02.txt" />
+    <Text Include="testcase\zad03.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e9bbbb51-b9a5-4bd2-8039-32a123a46b48}</ProjectGuid>
-    <RootNamespace>LaboratorijskaVjezba00</RootNamespace>
+    <ProjectGuid>{0c80395b-6e94-4f6c-a1b2-26bc184505a0}</ProjectGuid>
+    <RootNamespace>Vjezba</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
