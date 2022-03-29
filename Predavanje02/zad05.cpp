@@ -8,17 +8,24 @@ class Osoba {
 private: 
     string ime, prezime;
     int godina;
+
+    void ispravnost(string& text) {
+        // ovaj kod smo ponavljaji u setIme() i setPrezime - mozemo koristiti private funkciju za to
+        // koristi se referenca za izmjenu vrijednosti varijable
+
+        if (text[0] >= 'a' && text[0] <= 'z') {
+            text[0] = toupper(text[0]);
+        }
+
+        for (int i = 1; i < text.length(); i++)
+        {
+            text[i] = tolower(text[i]);
+        }
+    }
+
 public:
     void setIme(string novoIme) {
-        if (novoIme[0] >= 'a' && novoIme[0] <= 'z') {
-            novoIme[0] = toupper(novoIme[0]);
-        }
-
-        for (int i = 1; i < novoIme.length(); i++)
-        {
-            novoIme[i] = tolower(novoIme[i]);
-        }
-
+        ispravnost(novoIme);
         ime = novoIme;
     }
 
@@ -27,15 +34,7 @@ public:
     }
 
     void setPrezime(string novoPrezime) {
-        if (novoPrezime[0] >= 'a' && novoPrezime[0] <= 'z') {
-            novoPrezime[0] = toupper(novoPrezime[0]);
-        }
-
-        for (int i = 1; i < novoPrezime.length(); i++)
-        {
-            novoPrezime[i] = tolower(novoPrezime[i]);
-        }
-
+        ispravnost(novoPrezime);
         prezime = novoPrezime;
     }
 
@@ -56,7 +55,7 @@ int main() {
 
     vector<Osoba> studenti;
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 2; i++)
     {
         string tmpIme, tmpPrez;
         int tmpGod;
