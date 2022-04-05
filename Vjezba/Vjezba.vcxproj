@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="zad02.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <Text Include="testcase\zad02.txt" />
     <Text Include="testcase\zad03.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="zad07.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
