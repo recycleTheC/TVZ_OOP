@@ -15,33 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="testcase\zad03.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="testcase\zad02.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="testcase\zad08.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="lab03.cpp">
+    <ClCompile Include="zad.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="lab03\Ekipa.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="lab03\Igrac.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="lab03\Ekipa.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lab03\Igrac.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
