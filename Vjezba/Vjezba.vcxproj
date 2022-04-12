@@ -24,13 +24,11 @@
     <Text Include="testcase\zad08.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="lab03.cpp" />
-    <ClCompile Include="lab03\Ekipa.cpp" />
-    <ClCompile Include="lab03\Igrac.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="lab03\Ekipa.h" />
     <ClInclude Include="lab03\Igrac.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="zad10.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
