@@ -23,8 +23,22 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="zad02.cpp">
+    <ClCompile Include="zad01.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="skripta\najstarija_osoba\Osoba.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skripta\bankovni_racun\BankovniRacun.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="skripta\bankovni_racun\BankovniRacun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skripta\najstarija_osoba\Osoba.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

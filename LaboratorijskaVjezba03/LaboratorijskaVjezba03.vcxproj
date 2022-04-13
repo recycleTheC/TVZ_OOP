@@ -143,7 +143,13 @@
     <Text Include="zad02.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="zad02.cpp" />
+    <ClCompile Include="skripta\bankovni_racun\BankovniRacun.cpp" />
+    <ClCompile Include="skripta\najstarija_osoba\Osoba.cpp" />
+    <ClCompile Include="zad01.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="skripta\bankovni_racun\BankovniRacun.h" />
+    <ClInclude Include="skripta\najstarija_osoba\Osoba.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

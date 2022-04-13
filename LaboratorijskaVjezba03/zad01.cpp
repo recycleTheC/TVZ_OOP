@@ -45,11 +45,13 @@ private:
 	string adresa, naziv, kategorija;
 	vector<Knjiga> knjige;
 
-	void normaliziraj(string& tekst) {
+	string normaliziraj(string tekst) {
 		tekst[0] = toupper(tekst[0]);
 
 		for (int i = 1; i < tekst.size(); i++)
 			tekst[i] = tolower(tekst[i]);
+
+		return tekst;
 	}
 public:
 	Knjiznica(string naziv, string adresa, string kategorija) {
@@ -72,8 +74,7 @@ public:
 	}
 
 	void setNaziv(string naziv) {
-		normaliziraj(naziv);
-		this->naziv = naziv;
+		this->naziv = normaliziraj(naziv);;
 	}
 
 	string getKategorija() const {
