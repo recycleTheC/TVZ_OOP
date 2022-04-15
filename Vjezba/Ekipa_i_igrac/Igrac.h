@@ -27,4 +27,3 @@ public:
 	void setTrzisnaCijena(double cijena);
 	void setTrzisnaCijena(int cijena);
 };
-

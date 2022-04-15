@@ -18,23 +18,11 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <Text Include="testcase\zad02.txt" />
-    <Text Include="testcase\zad03.txt" />
-    <Text Include="testcase\zad08.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="lab03\Ekipa.h" />
-    <ClInclude Include="lab03\Igrac.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="nepravilna_matrica.cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0c80395b-6e94-4f6c-a1b2-26bc184505a0}</ProjectGuid>
-    <RootNamespace>Vjezba</RootNamespace>
+    <ProjectGuid>{e4ff7da2-5650-46c8-ba23-40e662ad332e}</ProjectGuid>
+    <RootNamespace>Nepravilnamatrica</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -150,6 +138,16 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Matrica.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="zadatak.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Matrica.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

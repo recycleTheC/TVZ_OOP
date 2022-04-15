@@ -12,6 +12,7 @@ public:
 
 	BankovniRacun() = default; // defaultni konstruktor
 	~BankovniRacun() = default; // defaultni destruktor
+
 	BankovniRacun(string brojRacuna, string tipKlijenta, string tipRacuna) {
 		setBrojRacuna(brojRacuna);
 		setTipKlijenta(tipKlijenta);

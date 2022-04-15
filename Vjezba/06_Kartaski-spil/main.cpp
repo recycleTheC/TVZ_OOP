@@ -80,7 +80,7 @@ int main() {
 	for (int i = 0; i < igraci.size(); i++)
 	{
 		cout << igraci[i].getIme() << ": ";
-		
+
 		for (int j = 0; j < igraci[i].karte.size(); j++)
 		{
 			cout << igraci[i].karte[j] << " ";

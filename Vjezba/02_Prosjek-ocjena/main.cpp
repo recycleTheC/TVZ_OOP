@@ -88,4 +88,6 @@ int main() {
 		prosjek /= m;
 		cout << "Prosjek ocjena iz kolegija " << nazivKolegija << " iznosi " << prosjek << endl;
 	}
+
+	return 0;
 }

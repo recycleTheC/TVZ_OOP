@@ -15,27 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="testcase\zad03.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="testcase\zad02.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="testcase\zad08.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="lab03\Ekipa.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lab03\Igrac.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="nepravilna_matrica.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Ekipa.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Igrac.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="zadatak.md">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ekipa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Igrac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
