@@ -1,11 +1,3 @@
-/*
-a) napisati klasu Student (ime, prezime, položeni predmeti) i klasa Predmet (naziv, šifra, ocjena)
-b) prema zadanom primjeru napraviti konstruktor koji prima ime, prezime i jedan predmet
-c) napisati metodu Sortiraj u klasi Student koja æe sortirati predmete po ocjeni (od najveæe do najmanje)
-d) deklarirati metodu Odlicni u klasi Student koja vraæa niz predmeta iz kojih student ima 5 i implementirati metodu izvan klase
-e) globalna metoda NajboljiStudent koja prima niz studenata i mora vratiti onog koji ima najveæi prosjek ocjena.
-*/
-
 #include<iostream>
 #include<vector>
 #include<string>
@@ -23,12 +15,11 @@ public:
 	~Predmet() {}
 	Predmet(int sifra, string naziv, int ocjena) : naziv(naziv), sifra(sifra), ocjena(ocjena) {}
 };
-
-bool test(Predmet& a, Predmet& b) {
-	return a.ocjena < b.ocjena;
-}
-
 class Student {
+private:
+	static bool test(Predmet& a, Predmet& b) {
+		return a.ocjena < b.ocjena;
+	}
 public:
 	string ime, prezime;
 	vector<Predmet> predmeti;
