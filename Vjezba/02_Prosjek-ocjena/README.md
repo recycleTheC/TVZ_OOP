@@ -1,10 +1,10 @@
 # 2. Prosjek ocjena
 
-Napišite program koji u vektor uèitava niz studenata, a za svakog studenta i popis njegovih upisanih kolegija te ocjenu iz svakog od tih kolegija.
-Nakon uèitavanja svih podataka potrebno je napisati globalnu funkciju ProsjekKolegija koja prima taj vektor i naziv odabranog kolegija te vraæa
+NapiÅ¡ite program koji u vektor uÄitava niz studenata, a za svakog studenta i popis njegovih upisanih kolegija te ocjenu iz svakog od tih kolegija.
+Nakon uÄitavanja svih podataka potrebno je napisati globalnu funkciju ProsjekKolegija koja prima taj vektor i naziv odabranog kolegija te vraÄ‡a
 prosjek ocjena svih studenata iz tog kolegija. Studente i kolegije potrebno je predstaviti istoimenim klasama.
 
-## Primjer izvoğenja:
+## Primjer izvoÄ‘enja:
 
 ```
 Unesite broj studenata: 3
