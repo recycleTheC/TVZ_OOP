@@ -1,7 +1,7 @@
 # Nepravilna matrica
 
-Nepravilna matrica se sastoji od redaka koji nemaju nuno uvijek isti broj stupaca.
-Napišite tijela metoda klase Matrica èija deklaracija izgleda na sljedeæi narèin:
+Nepravilna matrica se sastoji od redaka koji nemaju nuÅ¾no uvijek isti broj stupaca.
+NapiÅ¡ite tijela metoda klase Matrica Äija deklaracija izgleda na sljedeÄ‡i naÄin:
 
 ```cpp
 class Matrica {
@@ -23,7 +23,7 @@ public:
 };
 ```
 
-Matrica se formira na naèin da se metodom `dodaj` matrici preda novo-alocirani 1D niz brojeva:
+Matrica se formira na naÄin da se metodom `dodaj` matrici preda novo-alocirani 1D niz brojeva:
 
 ```cpp
 Matrica mat1;
@@ -36,4 +36,4 @@ mat1.ispis();
 ```
 
 Deklaraciju klase `Matrica` spremite u `Matrica.h`, a implementaciju njenih medota u `Matrica.cpp` datoteku.
-U funkciji `main` takoğer demonstrirajte poziv kopirnog konstruktora i operatora priduivanja sa semantikom kopiranja.
+U funkciji `main` takoÃ°er demonstrirajte poziv kopirnog konstruktora i operatora priduÅ¾ivanja sa semantikom kopiranja.
