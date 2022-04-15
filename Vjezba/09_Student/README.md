@@ -1,6 +1,6 @@
 # 9. Student
 
-Napiöite klasu Student koja u privatnom dijelu sadrûi pokazivaË JMBAG koji pokazuje na znakovni niz duljine 11.
+Napi≈°ite klasu Student koja u privatnom dijelu sadr≈æi pokazivaƒç JMBAG koji pokazuje na znakovni niz duljine 11.
 U javnom dijelu klase smjestite metode
 
 ```cpp
@@ -11,7 +11,7 @@ char* GetJMBAG() const;
 void SetJMBAG(char* noviJMBAG);
 ```
 
-Nakon öto napiöete tijela metoda klase Student napiöite funkciju main sa sljedeÊim sadrûajem.
+Nakon ≈°to napi≈°ete tijela metoda klase Student napi≈°ite funkciju main sa sljedeƒáim sadr≈æajem.
 
 ```cpp
 Student Ante("1122334455");
@@ -31,9 +31,9 @@ cout << Marko.GetJMBAG() << endl; // 1234567890
 cout << Ante.GetJMBAG() << endl; // 1234567890 ?!?!
 ```
 
-Nakon öto pokrenete program potrebno je primijetiti problematiËne ispise koji su naznaËeni u komentarima.
+Nakon ≈°to pokrenete program potrebno je primijetiti problematiƒçne ispise koji su naznaƒçeni u komentarima.
 Oni su se dogodili kao rezultat plitkog kopiranja (eng. *shallow copy*) prilikom pozivanja podrazumijevanog
-kopirnog konstruktora i operatora pridruûivanja. Za oba ova sluËaja potrebno je realizirati duboko kopiranje tako da konaËni ispis bude:
+kopirnog konstruktora i operatora pridru≈æivanja. Za oba ova sluƒçaja potrebno je realizirati duboko kopiranje tako da konaƒçni ispis bude:
 
 ```
 6677889900
@@ -42,4 +42,4 @@ kopirnog konstruktora i operatora pridruûivanja. Za oba ova sluËaja potrebno je 
 6677889900
 ```
 
-Dodatak: Napiöite prijenosni konstruktor i operator pridruûivanja sa semantikom prijenosa za klasu Student.
+Dodatak: Napi≈°ite prijenosni konstruktor i operator pridru≈æivanja sa semantikom prijenosa za klasu Student.
