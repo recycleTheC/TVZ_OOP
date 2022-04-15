@@ -28,7 +28,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="zadatak.md">
+    <None Include="README.md">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

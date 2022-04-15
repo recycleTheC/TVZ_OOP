@@ -20,8 +20,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="zadatak.md">
+    <None Include="README.md">
       <Filter>Resource Files</Filter>
-    </Text>
+    </None>
   </ItemGroup>
 </Project>

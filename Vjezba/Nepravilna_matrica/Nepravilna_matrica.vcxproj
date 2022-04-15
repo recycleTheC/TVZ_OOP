@@ -143,10 +143,10 @@
     <ClCompile Include="Matrica.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="zadatak.md" />
+    <ClInclude Include="Matrica.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Matrica.h" />
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
