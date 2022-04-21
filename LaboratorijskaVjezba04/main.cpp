@@ -41,8 +41,15 @@ public:
 	Agencija() = default;
 
 	Agencija(string naziv, string adresa) : naziv(naziv), adresa(adresa) {}
+	
+	Agencija(string naziv, string adresa, Putnik*&& putnik) : naziv(naziv), adresa(adresa) {
+		// Putnik*&& putnik -> referenca na privremeni pointer tipa Putnik
+		this->putnici.push_back(putnik);
+	}
 
 	Agencija(const Agencija& ag) {
+		// kopirni konstruktor, prima referencu na postojeci objekt
+
 		this->naziv = ag.naziv;
 		this->adresa = ag.adresa;
 
@@ -53,6 +60,8 @@ public:
 	}
 
 	Agencija(Agencija&& ag) {
+		// konstruktor prijenosa, prima referencu na privremeni objekt
+
 		this->naziv = ag.naziv;
 		this->adresa = ag.adresa;
 
@@ -60,39 +69,42 @@ public:
 
 		for (int i = 0; i < n; i++)
 		{
-			this->putnici.push_back(ag.putnici[0]);
-			ag.putnici.erase(ag.putnici.begin());
+			this->putnici.push_back(ag.putnici[0]); // putnik se prebacuje u trenutnu instancu
+			ag.putnici.erase(ag.putnici.begin()); // putnik se briše iz privremene instance
 		}
 	}
 
 	Agencija& operator = (Agencija&& ag) {
-		if (this != &ag) {
-			this->naziv = ag.naziv;
-			this->adresa = ag.adresa;
+		// operator pridruzivanja sa semantikom prijenosa
+		// operator prima referencu na privremeni objekt
 
-			for (int i = 0; i < this->putnici.size(); i++)
-			{
-				delete this->putnici[i];
-			}
+		this->naziv = ag.naziv;
+		this->adresa = ag.adresa;
 
-			this->putnici.clear();
-
-			int n = ag.putnici.size();
-
-			for (int i = 0; i < n; i++)
-			{
-				this->putnici.push_back(ag.putnici[0]);
-				ag.putnici.erase(ag.putnici.begin());
-			}
+		for (int i = 0; i < this->putnici.size(); i++)
+		{
+			// brisanje putnika u trenutnoj instanci
+			delete this->putnici[i];
 		}
 
-		return *this;
+		this->putnici.clear();
+
+		int n = ag.putnici.size();
+
+		for (int i = 0; i < n; i++)
+		{
+			this->putnici.push_back(ag.putnici[0]); // putnik se prebacuje u trenutnu instancu
+			ag.putnici.erase(ag.putnici.begin()); // putnik se briše iz privremene instance
+		}
+
+		return *this; // vraca se referenca na trenutnu instancu
 	}
 
 	~Agencija() {
 		for (int i = 0; i < putnici.size(); i++)
 		{
-			if (putnici[i] != NULL) delete putnici[i];
+			if (putnici[i] != NULL) delete putnici[i]; // dealokacija putnika
+			// ispitivanje nije nuzno!
 		}
 	}
 };
@@ -100,7 +112,7 @@ public:
 int main() {
 
 	Agencija agencija1("AgentTours", "Frankopanska 1");
-	agencija1.putnici.push_back(new Putnik("Mario", "Kopjar", "Havaji", 25000));
+	agencija1.putnici.push_back(new Putnik("Mario", "Valentic", "Havaji", 25000));
 
 	Agencija agencija2(agencija1); // kopirni konstruktor
 	agencija2.putnici.push_back(new Putnik("Marko", "Markic", "New York", 18000));
@@ -109,7 +121,9 @@ int main() {
 	agencija3.putnici.push_back(new Putnik("Pero", "Peric", "Amsterdam", 15000));
 
 	Agencija agencija4;
-	agencija4 = move(agencija3); // operator pridruživanja sa semantikom prijenosa
+	agencija4 = Agencija("Spectar", "Teslina 2", new Putnik("Pero", "Peric", "Amsterdam", 15000)); // operator pridruživanja sa semantikom prijenosa (privremeni objekt)
+	
+	Agencija agencija5 = move(agencija4); // operator pridruživanja sa semantikom prijenosa
 
 	return 0;
 }

@@ -30,6 +30,7 @@ Raketa::~Raketa(void) {
 		delete ciljevi[i];
 	}
 }
+
 Raketa& Raketa::operator=(const Raketa& other) {
 	if (this != &other) {
 		if (this->gradProizvodnje != NULL) {
@@ -42,10 +43,46 @@ Raketa& Raketa::operator=(const Raketa& other) {
 		*this->gradProizvodnje = *other.gradProizvodnje;
 		this->domet = other.domet;
 
+		int n = this->ciljevi.size();
+
+		for (int i = 0; i < n; i++)
+		{
+			delete this->ciljevi[i];
+		}
+
+		this->ciljevi.clear();
+
 		for (int i = 0; i < other.ciljevi.size(); i++)
 		{
 			ciljevi.push_back(new Grad(*other.ciljevi[i]));
 		}
+	}
+
+	return *this;
+}
+
+Raketa& Raketa::operator=(Raketa&& other) {
+
+	if (this->gradProizvodnje != NULL) {
+		delete this->gradProizvodnje;
+	}
+
+	this->naziv = other.naziv;
+	this->gradProizvodnje = new Grad(*other.gradProizvodnje);
+	this->domet = other.domet;
+
+	int n = this->ciljevi.size();
+
+	for (int i = 0; i < n; i++)
+	{
+		delete this->ciljevi[i];
+	}
+
+	this->ciljevi.clear();
+
+	for (int i = 0; i < other.ciljevi.size(); i++)
+	{
+		ciljevi.push_back(new Grad(*other.ciljevi[i]));
 	}
 
 	return *this;

@@ -18,6 +18,7 @@ public:
 	Raketa(const Raketa& other);
 	~Raketa(void);
 	Raketa& operator=(const Raketa& other);
+	Raketa& operator=(Raketa&& other);
 
 	void setGradProizvodnje(Grad& grad);
 	Grad* getGradProizvodnje();

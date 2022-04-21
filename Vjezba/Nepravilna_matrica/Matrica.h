@@ -15,7 +15,6 @@ public:
 	Matrica(const Matrica& m);
 	Matrica(Matrica&& m);
 	Matrica& operator = (const Matrica& m);
-
 	Matrica& operator = (Matrica&& m);
 
 	void dodaj(int brStupaca, int* redak);

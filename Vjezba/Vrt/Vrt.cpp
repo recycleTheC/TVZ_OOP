@@ -83,28 +83,26 @@ namespace Hortikultura {
 
 	Vrt& Vrt::operator = (Vrt&& vrt) {
 
-		if (this != &vrt) {
+		this->vlasnik = vrt.vlasnik;
+		this->adresa = vrt.adresa;
+		this->duljina = vrt.duljina;
+		this->sirina = vrt.sirina;
 
-			this->vlasnik = vrt.vlasnik;
-			this->adresa = vrt.adresa;
-			this->duljina = vrt.duljina;
-			this->sirina = vrt.sirina;
-
-			for (int i = 0; i < this->cvijece.size(); i++)
-			{
-				delete this->cvijece[i];
-			}
-
-			this->cvijece.clear();
-
-			int n = vrt.cvijece.size();
-
-			for (int i = 0; i < n; i++)
-			{
-				this->cvijece.push_back(vrt.cvijece[i]);
-				vrt.cvijece.erase(vrt.cvijece.begin());
-			}
+		for (int i = 0; i < this->cvijece.size(); i++)
+		{
+			delete this->cvijece[i];
 		}
+
+		this->cvijece.clear();
+
+		int n = vrt.cvijece.size();
+
+		for (int i = 0; i < n; i++)
+		{
+			this->cvijece.push_back(vrt.cvijece[i]);
+			vrt.cvijece.erase(vrt.cvijece.begin());
+		}
+
 		return *this;
 	}
 

@@ -127,7 +127,7 @@ Taedong Pyongyang
 Seoul S.Korea
 Moskva Rusija
 Zagreb Hrvatska
-Karlovac Hrvatsk
+Karlovac Hrvatska
 ```
 
 ### Dodatna pomoæ pri rješavanju

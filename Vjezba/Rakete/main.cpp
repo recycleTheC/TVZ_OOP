@@ -41,6 +41,9 @@ int main() {
 
 	Raketa r3(r1);
 	r3.dodajCilj(new Grad("Testni grad 3", "Nigdjezemska"));
+	
+	Raketa r4;
+	r4 = Raketa(nazivRakete, domet);
 
 	cout << "\nCiljevi 1:" << endl;
 
