@@ -13,7 +13,7 @@ private:
 	void dealocirajUcenike() {
 		for (int i = 0; i < ucenik.size(); i++)
 		{
-			delete ucenik[i];
+			if (ucenik[i] != NULL) delete ucenik[i];
 		}
 
 		ucenik.clear();
@@ -26,9 +26,7 @@ public:
 	Razred(vector<Ucenik*>& ucenici) {
 		for (int i = 0; i < ucenici.size(); i++)
 		{
-			Ucenik* novi = new Ucenik;
-			*novi = *ucenici[i];
-			this->ucenik.push_back(novi);
+			this->ucenik.push_back(new Ucenik(*ucenici[i]));
 		}
 	}
 	~Razred() {
@@ -59,9 +57,7 @@ public:
 
 			for (int i = 0; i < r.ucenik.size(); i++)
 			{
-				Ucenik* tmp = new Ucenik;
-				*tmp = *r.ucenik[i];
-				ucenik.push_back(tmp);
+				ucenik.push_back(new Ucenik(*r.ucenik[i]));
 			}
 		}
 
@@ -75,9 +71,7 @@ public:
 
 		for (int i = 0; i < r.ucenik.size(); i++)
 		{
-			Ucenik* tmp = new Ucenik;
-			*tmp = *r.ucenik[i];
-			ucenik.push_back(tmp);
+			ucenik.push_back(new Ucenik(*r.ucenik[i]));
 		}
 	}
 
