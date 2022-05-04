@@ -77,6 +77,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Igra_igraci", "Vjezba\Igra_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LaboratorijskaVjezba06", "LaboratorijskaVjezba06\LaboratorijskaVjezba06.vcxproj", "{9B1533EE-0B76-4632-BA67-C440784CD7E9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ducan_dobavljaci", "Vjezba\Ducan_dobavljaci\Ducan_dobavljaci.vcxproj", "{A8E9338F-0735-412F-AF45-0EFB991EEAC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -373,6 +375,14 @@ Global
 		{9B1533EE-0B76-4632-BA67-C440784CD7E9}.Release|x64.Build.0 = Release|x64
 		{9B1533EE-0B76-4632-BA67-C440784CD7E9}.Release|x86.ActiveCfg = Release|Win32
 		{9B1533EE-0B76-4632-BA67-C440784CD7E9}.Release|x86.Build.0 = Release|Win32
+		{A8E9338F-0735-412F-AF45-0EFB991EEAC4}.Debug|x64.ActiveCfg = Debug|x64
+		{A8E9338F-0735-412F-AF45-0EFB991EEAC4}.Debug|x64.Build.0 = Debug|x64
+		{A8E9338F-0735-412F-AF45-0EFB991EEAC4}.Debug|x86.ActiveCfg = Debug|Win32
+		{A8E9338F-0735-412F-AF45-0EFB991EEAC4}.Debug|x86.Build.0 = Debug|Win32
+		{A8E9338F-0735-412F-AF45-0EFB991EEAC4}.Release|x64.ActiveCfg = Release|x64
+		{A8E9338F-0735-412F-AF45-0EFB991EEAC4}.Release|x64.Build.0 = Release|x64
+		{A8E9338F-0735-412F-AF45-0EFB991EEAC4}.Release|x86.ActiveCfg = Release|Win32
+		{A8E9338F-0735-412F-AF45-0EFB991EEAC4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -400,6 +410,7 @@ Global
 		{99A491BA-BBA8-474B-B744-20863867A857} = {C16D6B05-1A04-4E6D-9B80-06DB4CDCB3D7}
 		{58E959EC-B828-4630-A6DB-FB937F43FD9D} = {C16D6B05-1A04-4E6D-9B80-06DB4CDCB3D7}
 		{203A841A-168C-4E27-B3C2-8B504F441E87} = {C16D6B05-1A04-4E6D-9B80-06DB4CDCB3D7}
+		{A8E9338F-0735-412F-AF45-0EFB991EEAC4} = {C16D6B05-1A04-4E6D-9B80-06DB4CDCB3D7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5AC1D8AF-CF9B-4F8B-914A-24992F999EBA}
