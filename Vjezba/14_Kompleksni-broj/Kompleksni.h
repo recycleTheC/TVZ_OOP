@@ -16,7 +16,7 @@ public:
 	Kompleksni operator * (Kompleksni& z);
 
 	Kompleksni operator ++ (int);
-	Kompleksni operator ++ ();
+	Kompleksni& operator ++ ();
 
 	friend ostream& operator << (ostream& izlaz, const Kompleksni& Z);
 	friend Kompleksni operator - (Kompleksni z, double br);

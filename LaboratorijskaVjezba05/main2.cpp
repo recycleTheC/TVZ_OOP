@@ -100,14 +100,17 @@ public:
 		else this->dimenzije[dodajNaDimenziju] += cigla.dimenzije[uzmiSaDimenzije];
 	}
 
-	Cigla& operator -- (int) throw(CiglaUnistenaIznimka) {
+	Cigla operator -- (int) throw(CiglaUnistenaIznimka) {
+
+		Cigla nova = *this;
+
 		for (int i = 0; i < 3; i++)
 		{
 			if (this->dimenzije[i] - 1 > 0) this->dimenzije[i]--;
 			else throw CiglaUnistenaIznimka();
 		}
 
-		return *this;
+		return nova;
 	}
 
 	friend ostream& operator << (ostream& izlaz, Cigla& cigla);

@@ -24,7 +24,7 @@ Kompleksni Kompleksni::operator * (Kompleksni& z) {
 	return Kompleksni(realni, imaginarni);
 }
 
-Kompleksni Kompleksni::operator ++() {
+Kompleksni& Kompleksni::operator ++() {
 	// prefiks
 	++re;
 	++im;
