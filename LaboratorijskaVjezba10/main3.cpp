@@ -13,7 +13,8 @@ public:
 	}
 	
 	void Brisi() {
-		this->elementi.erase(this->elementi.end() - 1);
+		//this->elementi.erase(this->elementi.end() - 1);
+		this->elementi.pop_back();
 	}
 
 	int BrojElemenata() const { return this->elementi.size(); }

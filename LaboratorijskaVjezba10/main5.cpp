@@ -20,7 +20,7 @@ vector<Student*> nadji(vector<Student>& v, function<bool(Student*)> kriterij) {
 
 	for (int i = 0; i < v.size(); i++)
 	{
-		if (kriterij(&v[i])) izdvojeni.push_back(&v[i]);
+		if (kriterij(&v[i])) izdvojeni.push_back(&v[i]); // u vektor se sprema pokazivac postojeceg studenta
 	}
 
 	return izdvojeni;

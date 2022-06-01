@@ -9,11 +9,11 @@ Funkcija ima povratni tip `void`.
 
 ## 2. zadatak
 
-Potrebno je nadopuniti donji programski odsječak na način da napišete funkciju "izdvoji", za koju vrijedi sljedeće:
+Potrebno je nadopuniti donji programski odsječak na način da napišete funkciju `izdvoji`, za koju vrijedi sljedeće:
 
-- vraća vector<int> (novi vektor)
-- prvi argument: vector<int>&
-- drugi argument: funkcija
+- vraća `vector<int>` (novi vektor)
+- prvi argument: `vector<int>&`
+- drugi argument: `funkcija`
 
 Funkcija izdvoji mora iz vektora "brojevi" izdvojiti samo dvoznamenkaste brojeve. Drugi argument funkcije potrebno je poslati kao lambda izraz (nadopuniti).
 
