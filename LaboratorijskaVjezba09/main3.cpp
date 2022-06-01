@@ -11,7 +11,7 @@ public:
 	}
 };
 
-template<class P, class K> // ? - je li ovo dobro???
+template<class P, class K>
 bool usporedi(vector<P> vektor, K komparator) {
 	for (int i = 0; i < vektor.size() - 1; i++)
 	{
