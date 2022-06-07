@@ -139,10 +139,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="zad01.txt" />
-    <Text Include="zad02.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="skripta\bankovni_racun\BankovniRacun.cpp" />
     <ClCompile Include="skripta\najstarija_osoba\Osoba.cpp" />
     <ClCompile Include="zad01.cpp" />
@@ -150,6 +146,9 @@
   <ItemGroup>
     <ClInclude Include="skripta\bankovni_racun\BankovniRacun.h" />
     <ClInclude Include="skripta\najstarija_osoba\Osoba.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

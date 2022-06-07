@@ -15,14 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="zad01.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="zad02.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="zad01.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -40,5 +32,10 @@
     <ClInclude Include="skripta\najstarija_osoba\Osoba.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
