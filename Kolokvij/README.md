@@ -9,9 +9,10 @@ sirovine na nalazištu te cijenu sirovine izraženu u kn/kg.
 a) Napišite konstruktor koji prima naziv i lokaciju za klasu `Nalaziste`, te konstruktor
 koji prima naziv, kolicinu i cijenu za klasu `Sirovina`.
 Za klasu `Nalaziste` još napišite konstruktor koji će uz naziv i lokaciju primati i neograničen
-broj sirovina - napišite ga izvan klase. 
+broj sirovina - napišite ga izvan klase. Demonstrirati poziv tog konstruktora uz dodavanje minimalno
+2 objekta tipa Sirovine.
 
-b) Napišite preopterećenje za `operator <<` tako da ispisuje sve sirovine iz klase `Nalaziste`
+b) Napišite preopterećenje za `operator <<` tako da ispisuje sve sirovine iz klase `Nalaziste` (jednu ispod druge)
 sortirane tako da se prvo ispišu sirovine s najmanjom cijenom. **(4 boda)** Ako se u sortiranju koristi
 lambda funkcija, dobije se još **1 bod**.
 
