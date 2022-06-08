@@ -1,32 +1,32 @@
-# Završni kolokvij
+# ZavrÅ¡ni kolokvij
 
-Napomena: **tekstovi zadataka nisu precizni - rekonstrukcija po sjeæanju!**
+Napomena: **tekstovi zadataka nisu precizni - rekonstrukcija po sjeÄ‡anju!**
 
-Napišite klasu `Nalaziste` koja sardava ime i lokaciju nalazišta, te niz koji sadrava
-sirovine koje se nalaze na tom nalazištu. Klasa `Sirovima` sadrava naziv, kolièinu
-sirovine na nalazištu te cijenu sirovine izraenu u kn/kg.
+NapiÅ¡ite klasu `Nalaziste` koja sardÅ¾ava ime i lokaciju nalaziÅ¡ta, te niz koji sadrÅ¾ava
+sirovine koje se nalaze na tom nalaziÅ¡tu. Klasa `Sirovina` sadrÅ¾ava naziv, koliÄinu
+sirovine na nalaziÅ¡tu te cijenu sirovine izraÅ¾enu u kn/kg.
 
-a) Napišite konstruktor koji prima naziv i lokaciju za klasu `Nalaziste`, te konstruktor
+a) NapiÅ¡ite konstruktor koji prima naziv i lokaciju za klasu `Nalaziste`, te konstruktor
 koji prima naziv, kolicinu i cijenu za klasu `Sirovina`.
-Za klasu `Nalaziste` još napišite konstruktor koji æe uz naziv i lokaciju primati i neogranièen
-broj sirovina - napišite ga izvan klase. 
+Za klasu `Nalaziste` joÅ¡ napiÅ¡ite konstruktor koji Ä‡e uz naziv i lokaciju primati i neograniÄen
+broj sirovina - napiÅ¡ite ga izvan klase. 
 
-b) Napišite preoptereæenje za `operator <<` tako da ispisuje sve sirovine iz klase `Nalaziste`
-sortirane tako da se prvo ispišu sirovine s najmanjom cijenom. **(4 boda)** Ako se u sortiranju koristi
-lambda funkcija, dobije se još **1 bod**.
+b) NapiÅ¡ite preoptereÄ‡enje za `operator <<` tako da ispisuje sve sirovine iz klase `Nalaziste`
+sortirane tako da se prvo ispiÅ¡u sirovine s najmanjom cijenom. **(4 boda)** Ako se u sortiranju koristi
+lambda funkcija, dobije se joÅ¡ **1 bod**.
 
 c) Implementirajte enkapsulaciju unutar klase `Sirovina` tako da se cijena sirovine ne
-moe postaviti na vrijednost koja nije unutar intervala [3,100]. Ako se pokuša postaviti
-cijena koja nije iz intervala, potrebno je baciti iznimku tipa IznimkaCijena koja æe ispisati
-poruku o pogrešnoj cijeni i redni broj iznimke koja je baèena, npr. "Iznimka 1: Cijena od 2.75 kn nije ispravna!"
+moÅ¾e postaviti na vrijednost koja nije unutar intervala [3,100]. Ako se pokuÅ¡a postaviti
+cijena koja nije iz intervala, potrebno je baciti iznimku tipa IznimkaCijena koja Ä‡e ispisati
+poruku o pogreÅ¡noj cijeni i redni broj iznimke koja je baÄena, npr. "Iznimka 1: Cijena od 2.75 kn nije ispravna!"
 
-d) Postoje primarna i sekundarna nalazišta sirovina. Razlikuju se po konaènoj cijeni sirovine koja
-ukljuèuje troškove prijevoza. Kod primarnih nalazišta cijena sirovine uveæava za 0.40 kn za svaki kg
+d) Postoje primarna i sekundarna nalaziÅ¡ta sirovina. Razlikuju se po konaÄnoj cijeni sirovine koja
+ukljuÄuje troÅ¡kove prijevoza. Kod primarnih nalaziÅ¡ta cijena sirovine uveÄ‡ava za 0.40 kn za svaki kg
 sirovine koji se preveze, a kod sekundarnih za 0.85 kn.
-Napišite globalnu funkciju `double UkupnaCijenaSirovina(vector<Nalaziste*>& nalazista)` koja
-æe vratiti ukupnu cijenu sirovina koja se nalaze u nalazištima iz vektora.
+NapiÅ¡ite globalnu funkciju `double UkupnaCijenaSirovina(vector<Nalaziste*>& nalazista)` koja
+Ä‡e vratiti ukupnu cijenu sirovina koja se nalaze u nalaziÅ¡tima iz vektora.
 
-e) Napisati klasu `TerminalSirovina` koja sadrava niz pokazivaèa na 
+e) Napisati klasu `TerminalSirovina` koja sadrÅ¾ava niz pokazivaÄa na 
 objekta klase `Sirovina`. U klasi implementirati prijenosni konstruktor 
-i operator pridruivanja sa kopiranjem. (Ako se u klasi ne napiše odgovarajuæi
+i operator pridruÅ¾ivanja sa kopiranjem. (Ako se u klasi ne napiÅ¡e odgovarajuÄ‡i
 destruktor oduzima se 1 bod)
