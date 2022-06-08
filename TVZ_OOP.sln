@@ -123,6 +123,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "27_Hotel", "Vjezba\27_Hotel
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "28_Ispit", "Vjezba\28_Ispit\28_Ispit.vcxproj", "{0E31C1D1-8CDD-4B03-A83A-573A442BF88F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Kolokvij", "Kolokvij\Kolokvij.vcxproj", "{834AE2F0-42B0-4CB5-ACB9-403B95F80081}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -603,6 +605,14 @@ Global
 		{0E31C1D1-8CDD-4B03-A83A-573A442BF88F}.Release|x64.Build.0 = Release|x64
 		{0E31C1D1-8CDD-4B03-A83A-573A442BF88F}.Release|x86.ActiveCfg = Release|Win32
 		{0E31C1D1-8CDD-4B03-A83A-573A442BF88F}.Release|x86.Build.0 = Release|Win32
+		{834AE2F0-42B0-4CB5-ACB9-403B95F80081}.Debug|x64.ActiveCfg = Debug|x64
+		{834AE2F0-42B0-4CB5-ACB9-403B95F80081}.Debug|x64.Build.0 = Debug|x64
+		{834AE2F0-42B0-4CB5-ACB9-403B95F80081}.Debug|x86.ActiveCfg = Debug|Win32
+		{834AE2F0-42B0-4CB5-ACB9-403B95F80081}.Debug|x86.Build.0 = Debug|Win32
+		{834AE2F0-42B0-4CB5-ACB9-403B95F80081}.Release|x64.ActiveCfg = Release|x64
+		{834AE2F0-42B0-4CB5-ACB9-403B95F80081}.Release|x64.Build.0 = Release|x64
+		{834AE2F0-42B0-4CB5-ACB9-403B95F80081}.Release|x86.ActiveCfg = Release|Win32
+		{834AE2F0-42B0-4CB5-ACB9-403B95F80081}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
