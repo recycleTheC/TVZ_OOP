@@ -1,33 +1,36 @@
-# Završni kolokvij
+﻿# Završni kolokvij
 
-Napomena: **tekstovi zadataka nisu precizni - rekonstrukcija po sjećanju!**
+Podaci o nalazištu metalnih sirovina sadrže naziv, lokaciju i popis sirovina, dok svaka sirovina ima naziv, količinu
+(kg/tjedno) i cijenu (kn/kg).
 
-Napišite klasu `Nalaziste` koja sardžava ime i lokaciju nalazišta, te niz koji sadržava
-sirovine koje se nalaze na tom nalazištu. Klasa `Sirovina` sadržava naziv, količinu
-sirovine na nalazištu te cijenu sirovine izraženu u kn/kg.
+a) Implementirajte klase `Nalaziste` i `Sirovina` te njihove konstruktore koji trebaju inicijalizirati sve opisane podatkovne
+članove osim popisa sirovina (**3 boda**).
 
-a) Napišite konstruktor koji prima naziv i lokaciju za klasu `Nalaziste`, te konstruktor
-koji prima naziv, kolicinu i cijenu za klasu `Sirovina`.
-Za klasu `Nalaziste` još napišite konstruktor koji će uz naziv i lokaciju primati i neograničen
-broj sirovina - napišite ga izvan klase. Demonstrirati poziv tog konstruktora uz dodavanje minimalno
-2 objekta tipa Sirovine.
+b) Implementirajte konstruktor klase `Nalaziste` koji osim naziva i lokacije može primiti i spremiti neograničen broj sirovina.
+Implementaciju konstruktora potrebno je napisati van klase. (**3 boda**)
 
-b) Napišite preopterećenje za `operator <<` tako da ispisuje sve sirovine iz klase `Nalaziste` jednu ispod druge i
-sortirane tako da se prvo ispišu sirovine s najmanjom cijenom. **(4 boda)** Ako se u sortiranju koristi
-lambda funkcija, dobije se još **1 bod**.
+c) U funkciji `main` kreirajte nalazište s barem 2 sirovine (proizvoljni naziv, količina i cijena), te preopterećenjem `operatora <<`
+za to nalazište ispišite sve sirovine (svaku u svom retku) sortirane po cijeni (od najmanje prema najvećoj) (**4 boda**) Ukoliko se
+prilikom sortiranja za usporedbu podataka koristi lambda funkcija dobije se **dodatni 1 bod**.
 
-c) Implementirajte enkapsulaciju unutar klase `Sirovina` tako da se cijena sirovine ne
-može postaviti na vrijednost koja nije unutar intervala [3,100]. Ako se pokuša postaviti
-cijena koja nije iz intervala, potrebno je baciti iznimku tipa IznimkaCijena koja će ispisati
-poruku o pogrešnoj cijeni i redni broj iznimke koja je bačena, npr. "Iznimka 1: Cijena od 2.75 kn nije ispravna!"
+d) Prilikom definiranja cijene sirovine potrebno je demonstrirati enkapsulaciju na način da nova cijena sirovine mora biti u rasponu
+[3,100] kn/kg. U protivnom je potrebno baciti iznimku tipa `IznimkaCijena` koja metodom `Ispis` ispisuje odgovarajuću poruku korisniku.
+U opisu poruke mora se nalaziti podatak o pogrešnoj cijeni. (**3 boda**)
 
-d) Postoje primarna i sekundarna nalazišta sirovina. Razlikuju se po konačnoj cijeni sirovine koja
-uključuje troškove prijevoza. Kod primarnih nalazišta cijena sirovine uvećava za 0.40 kn za svaki kg
-sirovine koji se preveze, a kod sekundarnih za 0.85 kn.
-Napišite globalnu funkciju `double UkupnaCijenaSirovina(vector<Nalaziste*>& nalazista)` koja
-će vratiti ukupnu cijenu sirovina koja se nalaze u nalazištima iz vektora.
+Također, u opisu poruke potrebno je ispisati i redni broj generirane iznimke koji je u početku jednak nuli, a generiranjem svake
+nove iznimke ovog tipa povećava se za 1. Primjer prvog ispisa: "Iznimka 1: Cijena od 2.3 kn/kg je pogresna!". Demonstrirati u funkciji
+`main`. (**4 boda**)
 
-e) Napisati klasu `TerminalSirovina` koja sadržava niz pokazivača na 
-objekta klase `Sirovina`. U klasi implementirati prijenosni konstruktor 
-i operator pridruživanja sa kopiranjem. (Ako se u klasi ne napiše odgovarajući
-destruktor oduzima se 1 bod)
+e) Nalazišta mogu biti glavna i sekundarna. U funkciji `main` kreirajte po jedno nalazište od oba tipa te napišite globalnu funkciju
+`double UkupnaCijenaSirovina(const vector<Nalaziste*>& nalaziste)` koja korištenjem polimorfizma vraća ukupnu cijenu sirovina svih 
+predanih nalazišta s uključenim transportom. Pri tome, svako glavno nalazište plaća cijenu transporta sirovine 0.4 kn/kg količine
+za svaku sirovinu, dok svako sekundarno nalazište plaća transport 0.85 kn/kg količine za svaku sirovinu.
+Ukupna cijena nalazišta čini sumu cijene ukupne tjedne količine sirovina i ukupne cijene transporta za tu količinu. (**6 bodova**)
+
+f) Neka se u klasi `TerminalSirovina` nalazi niz sirovina realiziranih pokazivačima na objekte tipa `Sirovina`. Za klasu `TerminalSirovina`
+implementirajte:
+
+- prijenosni konstruktor (3 boda)
+- operator pridruživanja sa semantikom kopiranja (3 boda)
+
+Klasa `TerminalSirovina` treba sadržavati odgovarajući destruktor. U protivnom se **oduzima 1 bod**.
